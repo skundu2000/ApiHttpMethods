@@ -8,9 +8,9 @@ public class GetRequest {
   @Test
   public void postRequest() {
 	  
-	  //reqres post request
+	  //reqres get request
 	  String endpoint = "https://reqres.in/api/users?page=2";
-	  
+	 //validate response body 
 	 given().
 	 when().get(endpoint).
 	 then().statusCode(200).
